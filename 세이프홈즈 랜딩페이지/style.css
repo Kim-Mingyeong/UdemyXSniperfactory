@@ -5,12 +5,14 @@ body {
 a {
   text-decoration: none;
 }
+.navbar,
+#footer {
+  margin: 1em 7em;
+}
 .navbar {
   /* 수직 중앙 정렬하기 */
   display: flex;
   align-items: center;
-
-  padding: 10px;
 }
 .navbar img {
   width: auto;
@@ -40,7 +42,10 @@ a {
 .inner a {
   color: white;
 }
-.service {
+.service,
+.service-price,
+.review,
+#start {
   text-align: center;
   margin: 0 6em 6em 6em;
   padding: 0 2em;
@@ -54,11 +59,44 @@ a {
   width: 300px;
   text-align: left;
 }
-.article-title,
-#btn-using,
-#btn-learn {
+.title,
+.btn-page-move {
   color: #0e7159;
 }
-.article-title {
+.title {
   font-size: 2em;
+}
+.app-service-contents {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+.app-service-contents img {
+  width: 300px;
+}
+.price {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  margin-bottom: 1.5em;
+}
+.review-contents {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.profile {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
 }

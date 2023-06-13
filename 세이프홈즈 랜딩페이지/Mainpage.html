@@ -14,7 +14,7 @@
       <a class="nav-link" id="btn-contact" href="#">문의하기</a>
       <a class="nav-link" id="btn-started" href="#">시작하기</a>
     </nav>
-    <header class="header">
+    <header id="header">
       <div>
         <img
           id="header-background-img"
@@ -32,7 +32,7 @@
     </header>
     <main class="container">
       <section class="service">
-        <p class="article-title">
+        <p class="title">
           세이프홈즈, <b>전/월세 보증금 지킴이 서비스입니다.</b>
         </p>
         <article class="contents">
@@ -68,10 +68,10 @@
             </p>
           </article>
         </article>
-        <a id="btn-using" href="#">지금 바로 사용하기 ></a>
+        <a class="btn-page-move" href="#">지금 바로 사용하기 ></a>
       </section>
       <section class="service">
-        <p class="article-title">
+        <p class="title">
           <b>부동산을 찾았지만 망설이고 계시나요?</b>
         </p>
         <article class="contents">
@@ -108,7 +108,7 @@
         </article>
       </section>
       <section class="service">
-        <p class="article-title">
+        <p class="title">
           세이프홈즈, <b>어떻게 내 보증금을 지킬 수 있을까요?</b>
         </p>
         <article class="contents">
@@ -153,10 +153,191 @@
             </p>
           </article>
         </article>
-        <a id="btn-learn" href="#">조금 더 알아보기 ></a>
+        <a class="btn-page-move" href="#">조금 더 알아보기 ></a>
+      </section>
+      <section class="app-service">
+        <div class="app-service-contents">
+          <div>
+            <img
+              src="./image/Phone-리포트.png"
+              alt="app-service-report-img"
+            />
+          </div>
+          <div>
+            <p>리포트</p>
+            <p>등기부 등본 등을 분석한 보증금 지킴이 리포트</p>
+            <p>
+              어려운 부동산 법률 용어가 아닌, 누구나 쉽게 이해 할 수 있는 보증금
+              지킴이 리포트 제공
+            </p>
+          </div>
+        </div>
+        <div class="app-service-contents">
+          <div>
+            <p>절차</p>
+            <p>보증금 보호를 위한, 체크리스트</p>
+            <p>
+              전세 사기 당하지 않기 위해 반드시 확인해야 할 체크리스트를
+              제공합니다.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./image/Phone-절차.png"
+              alt="app-service-procedure-img"
+            />
+          </div>
+        </div>
+        <div class="app-service-contents">
+          <div>
+            <img src="./image/Phone-알림.png" alt="app-service-alarm-img" />
+          </div>
+          <div>
+            <p>알림</p>
+            <p>등기부 등본 변동에 따른 실시간 알리미</p>
+            <p>
+              어떤 말도 듣지 못 했는데 집 주인이 바뀌었다고? 세이프홈즈가 즉각
+              알려드립니다.
+            </p>
+            <div>
+              <img
+                src="./image/notification-1.png"
+                alt="app-service-notification-img"
+              />
+            </div>
+            <div>
+              <img
+                src="./image/notification-2.png"
+                alt="app-service-notification-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-price">
+        <p class="title">세이프홈즈, <b>서비스 가격은 어떻게 될까요?</b></p>
+        <div class="price">
+          <div>
+            <p>전/월세 보증금 지킴이 리포트</p>
+            <p>
+              해당 플랜은 여러분을 위해 리포트를 제공합니다. 실제로 이 리포트는
+              언제 어디서든지 사용할 수 있고 그렇습니다.
+            </p>
+            <p>80,000 KRW</p>
+            <p>1회 50,000원 / 1주 80,000원</p>
+            <button>지금 바로 사용하기</button>
+          </div>
+          <div>
+            <p>등기부 등본 변동 알림 서비스</p>
+            <p>
+              해당 플랜은 여러분을 위해 리포트를 제공합니다. 실제로 이 리포트는
+              언제 어디서든지 사용할 수 있고 그렇습니다.
+            </p>
+            <p>50,000 KRW</p>
+            <p>1년 50,000원 / 2년 80,000원</p>
+            <button>지금 바로 사용하기</button>
+          </div>
+          <div>
+            <p>올 패키지(지킴이 리포트 + 알림)</p>
+            <p>
+              해당 플랜은 여러분을 위해 리포트를 제공합니다. 실제로 이 리포트는
+              언제 어디서든지 사용할 수 있고 그렇습니다.
+            </p>
+            <p>100,000 KRW</p>
+            <p>1주 + 2년 100,000원</p>
+            <button>지금 바로 사용하기</button>
+          </div>
+        </div>
+        <a class="btn-page-move" href="#"
+          >원하시는 플랜이 없다면 문의주세요! ></a
+        >
+      </section>
+      <section class="review">
+        <p class="title">세이프홈즈, <b>없었으면 큰일 날 뻔했어오!</b></p>
+        <div class="review-contents">
+          <div>
+            <div class="profile">
+              <div>
+                <img
+                  src="./image/Oval-1.png"
+                  class="profile-img"
+                  alt="profile-img"
+                />
+              </div>
+              <div>
+                <p>홍길동님</p>
+                <p>전/월세 보증금 지킴이 리포트</p>
+              </div>
+            </div>
+            <p>
+              공인중개사가 계약을 너무 서두르는 느낌이 들어 불안했는데,
+              세이프홈즈를 통해서 리포트를 받아보니 아니나 다를까 위험요소가
+              너무 큰 매물이었습니다. 근저당이 너무 높게 잡혀있었고, 보증보험
+              적합 대상도 아니라 경매로 넘어가게 되면 보증금을 돌려받기 힘들 것
+              같아 해당 매물 계약을 포기하고, 더 안전한 매물을 찾아서 계약할 수
+              있었습니다.
+            </p>
+          </div>
+          <div>
+            <div class="profile">
+              <div>
+                <img
+                  src="./image/Oval.png"
+                  class="profile-img"
+                  alt="profile-img"
+                />
+              </div>
+              <div>
+                <p>홍길동님</p>
+                <p>전/월세 보증금 지킴이 리포트</p>
+              </div>
+            </div>
+            <p>
+              공인중개사가 계약을 너무 서두르는 느낌이 들어 불안했는데,
+              세이프홈즈를 통해서 리포트를 받아보니 아니나 다를까 위험요소가
+              너무 큰 매물이었습니다. 근저당이 너무 높게 잡혀있었고, 보증보험
+              적합 대상도 아니라 경매로 넘어가게 되면 보증금을 돌려받기 힘들 것
+              같아 해당 매물 계약을 포기하고, 더 안전한 매물을 찾아서 계약할 수
+              있었습니다.
+            </p>
+          </div>
+          <div>
+            <div class="profile">
+              <div>
+                <img
+                  src="./image/Oval-1.png"
+                  class="profile-img"
+                  alt="profile-img"
+                />
+              </div>
+              <div>
+                <p>홍길동님</p>
+                <p>등기부 등본 변동 알림 서비스</p>
+              </div>
+            </div>
+            <p>
+              첫 부동산 계약이라 확인해야할 것이 중구난방이어서 불안했어요.
+              인터넷과 공인중개사에게 확인을 했지만 그래도 불안했어요. 내
+              전재산인데... 그런데 세이프홈즈에는 확인해야 할 것이 쉽게
+              나와있어서 준비물 준비하듯이 착착 할 수 있었습니다. 부동산 잘 아는
+              친구가 생긴 것 같아 좋았습니다.
+            </p>
+          </div>
+        </div>
+        <a class="btn-page-move" href="#">후기 진위여부 파악하러 가기 ></a>
+      </section>
+      <section id="start">
+        <h1>내 보증금, 안전하게 보호하려면 지금 시작하세요</h1>
+        <button>지금 바로 시작하기</button>
       </section>
     </main>
-    <section></section>
-    <footer></footer>
+    <footer id="footer">
+      <p>(주)세이프홈즈</p>
+      <p>
+        사업자 등록 번호 : 250-26-01109 | 대표 : 정동훈 <br />
+        경기도 성남시 수정구 대왕판교로 815 기업지원허브 혁신기술존 260-3호<br />
+        문의 메일 : safehomes.kr@gmail.com
+      </p>
+    </footer>
   </body>
 </html>
