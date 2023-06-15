@@ -30,108 +30,166 @@
       </div>
     </header>
     <main>
-      <section id="information">
-        <h3>Personan Information</h3>
-        <div id="info">
-          <p>
-            <img src="img/cake-candles-solid.svg" alt="cake icon" />
-            2000.00.00
-          </p>
-          <p>
-            <img src="img/envelope-solid.svg" alt="email icon" />
-            kalsrud0412@gmail.com
-          </p>
-          <p><img src="img/user-solid.svg" alt="mbti" /> ENTP</p>
-          <p>
-            <img src="img/newspaper-solid.svg" alt="newspaper icon" /><a
-              href="https://velog.io/@m_ngyeong"
-            >
-              https://velog.io/@m_ngyeong</a
-            >
-          </p>
-          <p>
-            <img src="img/github.svg" alt="github icon" />
-            <a href="https://github.com/Kim-Mingyeong"
-              >https://github.com/Kim-Mingyeong</a
-            >
-          </p>
+      <div id="info">
+        <section id="information">
+          <h3>Personal Information</h3>
+          <div id="personal-info">
+            <p>
+              <img src="img/cake-candles-solid.svg" alt="cake icon" />
+              2000.00.00
+            </p>
+            <p>
+              <img src="img/envelope-solid.svg" alt="email icon" />
+              kalsrud0412@gmail.com
+            </p>
+            <p><img src="img/user-solid.svg" alt="mbti" /> ENTP</p>
+            <p>
+              <img src="img/newspaper-solid.svg" alt="newspaper icon" /><a
+                href="https://velog.io/@m_ngyeong"
+              >
+                https://velog.io/@m_ngyeong</a
+              >
+            </p>
+            <p>
+              <img src="img/github.svg" alt="github icon" />
+              <a href="https://github.com/Kim-Mingyeong"
+                >https://github.com/Kim-Mingyeong</a
+              >
+            </p>
+          </div>
+        </section>
+        <section id="skills">
+          <h3>Skills</h3>
+          <div class="skill">
+            <p>HTML5 / CSS3</p>
+            <!-- <progress class="progress" value="80" min="0" max="100"></progress> -->
+            <div class="progress-bar">
+              <div class="progress" id="progress-1"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" id="progress-2"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Node.js</p>
+            <div class="progress-bar">
+              <div class="progress" id="progress-3"></div>
+            </div>
+          </div>
+          <div id="another-skills">
+            <div class="another-skill">Python</div>
+            <div class="another-skill">Swift</div>
+            <div class="another-skill">Figma</div>
+            <div class="another-skill">Adobe XD</div>
+            <div class="another-skill">Github</div>
+          </div>
+        </section>
+      </div>
+      <section id="goal">
+        <h2>Goals</h2>
+        <p>
+          이제는 스마트폰 쓰지 않는 사용자를 찾기 어려울 정도로 대다수의
+          사람들이 스마트폰을 사용하고 있습니다. 하지만 아직도 모바일 웹에서 PC
+          환경에 맞춰진 웹페이지가 제공되고 있습니다. 사용자는 어느 기기에서든
+          동일한 웹페이지를 제공받을 수 있어야 합니다. <br /><u
+            >사용자의 경험을 향상 시킬 수 있는 서비스를 제안하는 것</u
+          >이 프론트엔드 개발자로서 저의 목표입니다.
+        </p>
+        <ul id="goal-list">
+          <li>UI Design에 대한 이해</li>
+          <li>UX Design고려</li>
+          <li>웹 표준 준수</li>
+          <li>웹 접근성에 대한 이해</li>
+          <li>반응형 웹 디자인</li>
+          <li>최신 웹 기술 동향 파악</li>
+        </ul>
+        <p>위와 같은 역량을 향상시키기 위해 꾸준히 노력할 것입니다.</p>
+      </section>
+      <section id="extra-section">
+        <div id="interest">
+          <h3>Interest</h3>
+          <ul>
+            <li>디자인 트랜드</li>
+            <li>여행</li>
+            <li>OTT Platform</li>
+            <li>푸바오 - 요즘 최대 관심사</li>
+            <li>우리 집 강아지</li>
+            <li>Hello Kitty</li>
+          </ul>
+        </div>
+        <div id="extra">
+          <h3>Extra</h3>
+          <div id="extra-table">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">♥︎ 푸바오 ♥︎</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-title">생일</td>
+                  <td class="table-text">2020년 7월 20일</td>
+                </tr>
+                <tr>
+                  <td class="table-title">태어난 곳</td>
+                  <td class="table-text">에버랜드 판다월드</td>
+                </tr>
+                <tr>
+                  <td class="table-title">가족</td>
+                  <td class="table-text">아빠 러바오, 엄마 아이바오</td>
+                </tr>
+                <tr>
+                  <td class="table-title">몸무게</td>
+                  <td class="table-text">101.2kg</td>
+                </tr>
+                <tr>
+                  <td class="table-title">매력</td>
+                  <td class="table-text">뚠빵한 매력</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id="hellokitty">
+              <thead>
+                <tr>
+                  <th colspan="2">♥︎ Hello Kitty ♥︎</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-title">생일</td>
+                  <td class="table-text">11월 1일</td>
+                </tr>
+                <tr>
+                  <td class="table-title">태어난 곳</td>
+                  <td class="table-text">영국 교외</td>
+                </tr>
+                <tr>
+                  <td class="table-title">가족</td>
+                  <td class="table-text">아빠, 엄마, 쌍둥이 동생 미미</td>
+                </tr>
+                <tr>
+                  <td class="table-title">몸무게</td>
+                  <td class="table-text">사과 3개</td>
+                </tr>
+                <tr>
+                  <td class="table-title">매력</td>
+                  <td class="table-text">엄마가 만들어준 리본</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="skill">
-          <p>HTML5 / CSS3</p>
-          <!-- <progress class="progress" value="80" min="0" max="100"></progress> -->
-          <div class="progress-bar">
-            <div class="progress" id="progress-1"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>JavaScript</p>
-          <div class="progress-bar">
-            <div class="progress" id="progress-2"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>Node.js</p>
-          <div class="progress-bar">
-            <div class="progress" id="progress-3"></div>
-          </div>
-        </div>
-        <div id="another-skills">
-          <div class="another-skill">Python</div>
-          <div class="another-skill">Swift</div>
-          <div class="another-skill">Figma</div>
-          <div class="another-skill">Adobe XD</div>
-          <div class="another-skill">Github</div>
-        </div>
+      <section id="after-project">
+        <h3>After project completion</h3>
+        <p>무조건 취뽀!!!!!!!!!!!!!</p>
       </section>
     </main>
-    <section id="goal">
-      <p>사용자가 만족할 수 있는 서비스를 제안하는 것이 저의 목표입니다.</p>
-      <ol id="goal-list">
-        <li>UI디자인에 대한 이해와 경험</li>
-        <li>웹 표준 준수</li>
-        <li>웹 접근성에 대한 이해</li>
-        <li>UX 고려</li>
-        <li>반응형 웹 디자인</li>
-        <li>최신 웹 기술 습득 위와 같은 역량을 향상</li>
-      </ol>
-      <p>
-        위와 같은 프론트엔드 개발자로서 필요한 역량을 발전시키기 위해 꾸준히
-        노력할 것이며 사용자에게 더 나은 웹 경혐을 제공할 것입니다.
-      </p>
-    </section>
-    <h3>Interest</h3>
-    <h3>After project completion</h3>
-    <h3>Extra</h3>
-    <table id="table">
-      <thead>
-        Hello Kitty
-        <tr>
-          <th>♥︎</th>
-          <th>Introduction</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>이름</td>
-          <td>키티 화이트</td>
-        </tr>
-        <tr>
-          <td>생일</td>
-          <td>11월 1일</td>
-        </tr>
-        <tr>
-          <td>태어난 곳</td>
-          <td>영국 교외</td>
-        </tr>
-        <tr>
-          <td>가족</td>
-          <td>아빠, 엄마, 쌍둥이 동생 미미</td>
-        </tr>
-      </tbody>
-    </table>
+
     <footer>
       <small>Copyright ⓒ 2023 KimMinGyeong All rights reserved.</small>
     </footer>
