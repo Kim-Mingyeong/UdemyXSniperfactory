@@ -390,6 +390,9 @@ footer {
   .right-box {
     background: #ffffff00;
   }
+  footer {
+    padding: 2em 10em;
+  }
 }
 
 @media screen and (max-width: 480px) {
