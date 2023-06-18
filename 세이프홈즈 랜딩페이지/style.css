@@ -1,29 +1,44 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 a {
   text-decoration: none;
 }
-.navbar,
-#footer {
-  margin: 1em 7em;
+/*        navbar       */
+.navbar {
+  margin: 0 auto;
 }
 .navbar {
   /* 수직 중앙 정렬하기 */
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .navbar img {
   width: auto;
-  height: 20px;
+  height: 25px;
   object-fit: cover;
 }
 .nav-link {
   margin: 10px;
-
-  color: black;
+  font-size: 12px;
+  font-weight: 500;
 }
+#btn-contact {
+  color: #333d4b;
+}
+#btn-started {
+  border-radius: 4px;
+  background-color: #0e7159;
+  color: white;
+
+  padding: 0.5em 1.5em;
+}
+/*        header       */
 #header-background-img {
   width: 100%;
   height: 100%;
@@ -39,64 +54,292 @@ a {
   text-align: center;
   color: white;
 }
+.inner h1 {
+  font-size: 3em;
+}
 .inner a {
   color: white;
+  font-size: 1em;
+  font-weight: 200;
 }
-.service,
-.service-price,
-.review,
-#start {
+
+/*         main        */
+main {
+  margin: 5.5em 0;
+}
+
+/*       section       */
+section {
   text-align: center;
-  margin: 0 6em 6em 6em;
-  padding: 0 2em;
-}
-.contents {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-}
-.service-contents {
-  width: 300px;
-  text-align: left;
 }
 .title,
 .btn-page-move {
   color: #0e7159;
 }
 .title {
-  font-size: 2em;
+  font-size: 2.5em;
+}
+.btn-page-move {
+  font-weight: 600;
+}
+
+.service,
+#app-service,
+#service-price {
+  margin-bottom: 9em !important;
+}
+/*       section1,2       */
+.contents {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start; */
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  place-content: center;
+  column-gap: 2.5em;
+  row-gap: 2.5em;
+
+  margin: 1em auto;
+}
+.service-contents {
+  text-align: left;
+}
+.service-contents img {
+  width: 270px;
+  margin-bottom: 1em;
+}
+.contents-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333d4b;
+
+  width: 10em;
+}
+.service-contents p {
+  color: #6b7684;
+  font-size: 0.9em;
+}
+
+#section2 div,
+#section3 div {
+  width: 100%;
+}
+
+/*       section3       */
+#section3 {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.number {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #0e7159;
+
+  margin-bottom: 0.5em;
+}
+
+/*       section4       */
+#app-service {
+  margin: 0 auto;
+  width: 1300px;
 }
 .app-service-contents {
   display: flex;
-  flex: row;
-  justify-content: center;
-  margin-bottom: 6em;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+
+  margin-bottom: 7em;
 }
 .app-service-contents img {
   width: 300px;
 }
-.price {
+.app-service-explain {
+  width: 300px;
+}
+.app-service-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #0e7159;
+
+  margin-bottom: 0.8em;
+}
+.app-service-subtitle {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333d4b;
+}
+.app-service-explain p {
+  color: #6b7684;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+/*       section5       */
+#service-price {
+  margin: 0 5em;
+}
+.service-price {
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: left;
 
-  margin-bottom: 1.5em;
+  margin-bottom: 1.7em;
+}
+.price-box {
+  width: 270px;
+  height: 100%;
+  background: #f2f3f4;
+  border-radius: 16px;
+
+  margin: 0 1em;
+  padding: 1em;
+}
+.price-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #333d4b;
+}
+.price-explain,
+.pricing-policy {
+  color: #6b7684;
+  font-size: 0.9em;
+}
+.price {
+  color: #0e7159;
+  font-size: 1.8em;
+  font-weight: 600;
+
+  margin-bottom: -0.2em;
+}
+.price-box > button {
+  width: 100%;
+  background: #0e7159;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+
+  margin-top: 0.5em;
+  padding: 1em 3em;
+}
+
+/*       section6       */
+#review {
+  overflow: hidden;
+  position: relative;
 }
 .review-contents {
   display: flex;
-  flex: row;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
+
+  margin-inline-start: -7em;
+  margin-inline-end: -7em;
+  margin-bottom: 1.7em;
+}
+.linear-gradient {
+  width: 100px;
+  height: 300px;
+}
+.left-box {
+  background: linear-gradient(90deg, #fff, #ffffff5b);
+
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+.right-box {
+  background: linear-gradient(270deg, #fff, #ffffff5b);
+
+  position: absolute;
+  top: 130px;
+  right: 0;
+}
+.review-box {
+  width: 600px;
+  height: 230px;
+  background: #f2f3f4;
+  border-radius: 16px;
+  overflow: hidden;
+
+  margin: 0 1em;
+  padding: 2em;
 }
 .profile {
   display: flex;
-  flex: row;
+  flex-direction: row;
   align-items: center;
 }
 .profile-img {
   width: 50px;
   height: 50px;
+
+  margin-right: 1em;
+}
+.user-name {
+  color: #333d4b;
+  font-size: 1em;
+  font-weight: 600;
+
+  margin: 0;
+}
+.review-title {
+  color: #6b7684;
+  font-size: 1em;
+
+  margin: 0;
+}
+.review {
+  color: #6b7684;
+  line-height: 2em;
+
+  margin-bottom: 0;
+}
+
+/*       section7       */
+#started {
+  background-color: #0e7159;
+  height: 500px;
+  position: relative;
+}
+#started > div {
+  /* 수직 중앙 정렬하기 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#started h1 {
+  color: white;
+  font-size: 3em;
+}
+#btn-started {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  color: #0e7159;
+  font-size: 1em;
+  font-weight: 600;
+
+  padding: 1em 1.5em;
+}
+
+/*       footer      */
+footer {
+  padding: 2em 20em;
+}
+#footer > div {
+  color: #333d4b;
+  font-size: 1em;
+  font-weight: 600;
+}
+#footer > p {
+  color: #6b7684;
+  font-size: 0.8em;
+  line-height: 1.8em;
 }
