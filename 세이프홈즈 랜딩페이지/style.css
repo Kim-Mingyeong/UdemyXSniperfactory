@@ -372,7 +372,7 @@ footer {
   }
   .service-price {
     display: grid;
-    grid-template-columns: repeat(2, 270px);
+    grid-template-columns: repeat(2, 1fr);
     place-content: center;
     column-gap: 3em;
     row-gap: 3em;
