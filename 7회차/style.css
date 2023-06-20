@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  filter: brightness(0.5);
+}
+form,
+#clock,
+#greeting {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
+#clock {
+  top: 35%;
+  font-size: 5em;
+}
+form {
+  top: 54%;
+}
+input {
+  background-color: transparent;
+  border-color: white;
+  border-width: 0 0 2px 0;
+
+  padding: 0.2em 11em 0 0.5em;
+}
+input::placeholder {
+  color: white;
+  font-style: italic;
+}
+input:focus {
+  /* outline: none; */
+  color: white;
+}
+#greeting {
+  top: 50%;
+  font-size: 2em;
+}
+
+.hidden {
+  display: none;
+}
