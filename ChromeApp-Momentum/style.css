@@ -3,12 +3,11 @@ body {
   margin: 0;
   padding: 0;
 
-  text-align: center;
   overflow: hidden;
 }
 img {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   position: relative;
   filter: brightness(0.5);
 }
@@ -22,18 +21,32 @@ form,
   color: white;
 }
 #clock {
-  top: 35%;
+  top: 30%;
   font-size: 5em;
 }
-form {
-  top: 54%;
+#login-form {
+  top: 50%;
+}
+#login-form > input {
+  font-size: 1.2em;
+}
+#todo-form {
+  top: 57%;
+}
+ul {
+  position: absolute;
+  top: 59%;
+  left: 38%;
+  z-index: 1;
+  color: white;
 }
 input {
+  width: 250px;
   background-color: transparent;
   border-color: white;
-  border-width: 0 0 2px 0;
+  border-width: 0 0 1.5px 0;
 
-  padding: 0.2em 11em 0 0.5em;
+  padding: 0.2em 0 0 0.5em;
 }
 input::placeholder {
   color: white;
@@ -44,7 +57,7 @@ input:focus {
   color: white;
 }
 #greeting {
-  top: 50%;
+  top: 45%;
   font-size: 2em;
 }
 
