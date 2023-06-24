@@ -10,7 +10,7 @@ const USERNAME_KEY = "username"; //string을 반복적으로 사용하는 경우
 function onLoginSubmit(event) {
   event.preventDefault(); //preventDefault(): event의 기본 행동이 발생되지 않도록 막는 메서드
   loginForm.classList.add(HIDDEN_CALSSNAME);
-  const username = loginInput.value; //inputd으로 username 정보를 받아옴
+  const username = loginInput.value; //input으로 username 정보를 받아옴
   localStorage.setItem(USERNAME_KEY, username); //local Storage에 username 저장
   paintGreetings(username);
 }

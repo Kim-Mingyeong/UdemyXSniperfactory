@@ -18,11 +18,13 @@ function Greetings() {
   const savedUsername = localStorage.getItem(USERNAME_KEY);
   console.log(savedUsername);
 
+  //중첩 if문 사용
+  //localStorage에 저장된 값을 없거나 input으로부터 받은 정보가 없을 때
   if (savedUsername === null) {
     if (paintGreetings === false) {
       return (
         <>
-          <form id="loginForm" onSubmit={handleFormSubmit}>
+          <form id="login-form" onSubmit={handleFormSubmit}>
             <input
               id="loginInput"
               type="text"
