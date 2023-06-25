@@ -26,7 +26,6 @@ function Greetings() {
         <>
           <form id="login-form" onSubmit={handleFormSubmit}>
             <input
-              id="loginInput"
               type="text"
               required
               maxLength={15}
