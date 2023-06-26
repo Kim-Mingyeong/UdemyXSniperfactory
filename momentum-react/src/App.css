@@ -44,3 +44,28 @@ input:focus {
   /* outline: none; */
   color: white;
 }
+
+#todo-form {
+  top: 57%;
+}
+ul {
+  width: 250px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-55%, 0);
+  z-index: 1;
+  color: white;
+
+  list-style-type: none;
+}
+ul > li > input {
+  width: auto;
+  margin-right: 1em;
+}
+button {
+  background-color: transparent;
+  border: none;
+
+  float: right;
+}
