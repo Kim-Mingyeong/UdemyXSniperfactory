@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
+import React, { useState, useEffect } from "react";
 
-const socket = io("http://localhost:3000"); // 서버의 URL에 맞게 변경
+const socket = io("http://localhost:3001"); // 서버의 URL에 맞게 변경
 const MESSAGE = "message";
 
 export default function LiveChat() {
